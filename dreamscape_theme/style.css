@@ -245,3 +245,20 @@ p {
 .modal-header.custom-modal-header{
   background-color: #212121;
 }
+
+span.icon-color{
+  color: #ff6b6b;
+}
+
+.input-group-text.caption-gallery-details-bold.icon-color{
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+}
+.form-control.border-color{
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+}
+.custom-close{
+  background-color: #ff6b6b;
+  color: white
+}

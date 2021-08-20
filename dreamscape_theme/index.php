@@ -319,24 +319,24 @@
             <div class="modal-content rounded-0 border-0">
               <div class="modal-header custom-modal-header">
                 <h5 class="modal-title caption-title-modal" id="exampleModalLiveLabel">Contact Us</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close rounded-pill ms-5 custom-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="input-group input-group-sm mb-3 ps-3 pe-3">
-                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-user"></i></span>
-                    <input type="text" class="form-control " placeholder="Username" aria-label="Name" aria-describedby="basic-addon1">
+                    <span class="input-group-text caption-gallery-details-bold icon-color" id="basic-addon1"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control border-color " placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group input-group-sm mb-3 ps-3 pe-3">
-                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                    <input type="text" class="form-control " placeholder="Username" aria-label="Phone" aria-describedby="basic-addon1">
+                    <span class="input-group-text caption-gallery-details-bold icon-color" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                    <input type="text" class="form-control border-color " placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group input-group-sm mb-3 ps-3 pe-3">
-                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-link"></i></span>
-                    <input type="text" class="form-control " placeholder="Username" aria-label="Email" aria-describedby="basic-addon1">
+                    <span class="input-group-text caption-gallery-details-bold icon-color" id="basic-addon1"><i class="fa fa-link"></i></span>
+                    <input type="text" class="form-control border-color " placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group input-group-sm mb-3 ps-3 pe-3">
-                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                    <input type="textarea" class="form-control " placeholder="Username" aria-label="Message" aria-describedby="basic-addon1">
+                    <span class="input-group-text caption-gallery-details-bold icon-color" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                    <input type="textarea" class="form-control border-color " placeholder="Message" aria-label="Message" aria-describedby="basic-addon1">
                 </div>
               </div>
 	            <div class="p-2 flex-fill bd-highlight text-center pt-5">
