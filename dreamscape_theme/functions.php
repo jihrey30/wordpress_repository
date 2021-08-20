@@ -64,9 +64,9 @@ function themename_customize_register($wp_customize){
     $wp_customize->get_setting( 'image_control_one' )->transport = 'postMessage';
 
     $wp_customize->add_section('imageoner', array(
-    "title" => 'Home Page Images',
+    "title" => 'Features Tour Images',
     "priority" => 28,
-    "description" => __( 'Upload images to display on the homepage.', 'theme-slug' )
+    "description" => __( 'Upload images to display on Featured Tour Gallery.', 'theme-slug' )
     ));
     $wp_customize->add_setting('image_control_one', array(
     'default' =>'',
@@ -74,19 +74,42 @@ function themename_customize_register($wp_customize){
     'capability' => 'edit_theme_options',
     ));
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control_one', array(
-    'label' => __( 'Featured Home Page Image One', 'theme-slug' ),
+    'label' => __( 'Featured Tour Image 1', 'theme-slug' ),
     'section' => 'imageoner',
     'settings' => 'image_control_one',
     ))
     );
+
+    $wp_customize->add_setting( 'custom_field_title_1' , array(
+        'default' => 'Kamalame Cay Resort',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_title_1', array(
+        'label' => __( 'Image [1] Title', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_title_1',
+        'type' => 'text'
+    ) );
+    $wp_customize->add_setting( 'custom_field_details_1' , array(
+        'default' => 'Kamalame Cay, The Bahamas',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_details_1', array(
+        'label' => __( 'Image [1] Details', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_details_1',
+        'type' => 'textarea'
+    ) );
     
 // 2
     $wp_customize->get_setting( 'image_control_two' )->transport = 'postMessage';
 
     $wp_customize->add_section('imageoner', array(
-    "title" => 'Home Page Images',
+    "title" => 'Features Tour Images',
     "priority" => 28,
-    "description" => __( 'Upload images to display on the homepage.', 'theme-slug' )
+    "description" => __( 'Upload images to display on Featured Tour Gallery.', 'theme-slug' )
     ));
     $wp_customize->add_setting('image_control_two', array(
     'default' =>'',
@@ -94,18 +117,41 @@ function themename_customize_register($wp_customize){
     'capability' => 'edit_theme_options',
     ));
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control_two', array(
-    'label' => __( 'Featured Home Page Image Two', 'theme-slug' ),
+    'label' => __( 'Featured Tour Image 2', 'theme-slug' ),
     'section' => 'imageoner',
     'settings' => 'image_control_two',
     ))
     );
+
+    $wp_customize->add_setting( 'custom_field_title_2' , array(
+        'default' => 'Kamalame Cay Resort',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_title_2', array(
+        'label' => __( 'Image [2] Title', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_title_2',
+        'type' => 'text'
+    ) );
+    $wp_customize->add_setting( 'custom_field_details_2' , array(
+        'default' => 'Kamalame Cay, The Bahamas',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_details_2', array(
+        'label' => __( 'Image [2] Details', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_details_2',
+        'type' => 'textarea'
+    ) );
 // 3
     $wp_customize->get_setting( 'image_control_3' )->transport = 'postMessage';
 
     $wp_customize->add_section('imageoner', array(
-    "title" => 'Home Page Images',
+    "title" => 'Features Tour Images',
     "priority" => 28,
-    "description" => __( 'Upload images to display on the homepage.', 'theme-slug' )
+    "description" => __( 'Upload images to display on Featured Tour Gallery.', 'theme-slug' )
     ));
     $wp_customize->add_setting('image_control_3', array(
     'default' =>'',
@@ -113,18 +159,40 @@ function themename_customize_register($wp_customize){
     'capability' => 'edit_theme_options',
     ));
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control_3', array(
-    'label' => __( 'Featured Home Page Image Three', 'theme-slug' ),
+    'label' => __( 'Featured Tour Image 3', 'theme-slug' ),
     'section' => 'imageoner',
     'settings' => 'image_control_3',
     ))
     );
+    $wp_customize->add_setting( 'custom_field_title_3' , array(
+        'default' => 'Kamalame Cay Resort',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_title_3', array(
+        'label' => __( 'Image [3] Title', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_title_3',
+        'type' => 'text'
+    ) );
+    $wp_customize->add_setting( 'custom_field_details_3' , array(
+        'default' => 'Kamalame Cay, The Bahamas',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_details_3', array(
+        'label' => __( 'Image [3] Details', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_details_3',
+        'type' => 'textarea'
+    ) );
 // 4
     $wp_customize->get_setting( 'image_control_4' )->transport = 'postMessage';
 
     $wp_customize->add_section('imageoner', array(
-    "title" => 'Home Page Images',
+    "title" => 'Features Tour Images',
     "priority" => 28,
-    "description" => __( 'Upload images to display on the homepage.', 'theme-slug' )
+    "description" => __( 'Upload images to display on Featured Tour Gallery.', 'theme-slug' )
     ));
     $wp_customize->add_setting('image_control_4', array(
     'default' =>'',
@@ -132,11 +200,33 @@ function themename_customize_register($wp_customize){
     'capability' => 'edit_theme_options',
     ));
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control_4', array(
-    'label' => __( 'Featured Home Page Image Four', 'theme-slug' ),
+    'label' => __( 'Featured Tour Image 4', 'theme-slug' ),
     'section' => 'imageoner',
     'settings' => 'image_control_4',
     ))
     );
+    $wp_customize->add_setting( 'custom_field_title_4' , array(
+        'default' => 'Kamalame Cay Resort',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_title_4', array(
+        'label' => __( 'Image [4] Title', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_title_4',
+        'type' => 'text'
+    ) );
+    $wp_customize->add_setting( 'custom_field_details_4' , array(
+        'default' => 'Kamalame Cay, The Bahamas',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'our_sanitize_function',
+    ) );
+    $wp_customize->add_control( 'custom_field_details_4', array(
+        'label' => __( 'Image [4] Details', 'placeholderfortextdomain' ),
+        'section' => 'imageoner',
+        'settings' => 'custom_field_details_4',
+        'type' => 'textarea'
+    ) );
 }
 function our_sanitize_function( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );

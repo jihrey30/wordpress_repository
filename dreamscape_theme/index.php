@@ -1,12 +1,4 @@
- <?php get_header(); 
-
-    // if ( '' == get_theme_mod( 'custom_field_contact' ) ) { $custom_field_contact = 'Default set of data'; } else { $custom_field_contact = get_theme_mod('custom_field_contact'); } 
-    // echo $custom_field_contact;
-
-    // if ( '' == get_theme_mod( 'custom_field_email' ) ) { $custom_field_email = 'Default set of data'; } else { $custom_field_email = get_theme_mod('custom_field_email'); } 
-    // echo $custom_field_email;
- ?>
-
+ <?php get_header(); ?>
 <!-- slider-->
 <div class="container m-0 p-0">
 		<div class="arrow arrow-left">
@@ -55,10 +47,27 @@
 		?>" alt="">	
 		<div class="caption">
 			<div class="d-flex flex-column text-center caption-gallery-details-bold">
-			Kamalame Cay Resort 
+            <?php 
+				if ( '' == get_theme_mod( 'custom_field_title_1' ) ) 
+					{ 
+						$custom_field_title_1 = 'Kamalame Cay Resort'; 
+					} else 
+						{ $custom_field_title_1 = get_theme_mod('custom_field_title_1'); 
+					} 
+					echo $custom_field_title_1; 
+			?>
 			</div>
 			<div class="d-flex flex-column text-center caption-gallery-details">
-			Kamalame Cay, The Bahamas  
+            <?php 
+				if ( '' == get_theme_mod( 'custom_field_details_1' ) ) 
+					{ 
+						$custom_field_details_1 = 'Kamalame Cay, The Bahamas'; 
+					} else 
+						{ $custom_field_details_1 = get_theme_mod('custom_field_details_1'); 
+					} 
+					echo $custom_field_details_1; 
+			?>
+			<!-- </div> -->
 			</div>
 			<div class="text-center flex-fill bd-highlight">
 						<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp Read More &nbsp &nbsp</button>
@@ -77,10 +86,26 @@
 		?>" alt="">	
 		<div class="caption">
 			<div class="d-flex flex-column text-center caption-gallery-details-bold">
-			Kamalame Cay Resort 
+			<?php 
+				if ( '' == get_theme_mod( 'custom_field_title_2' ) ) 
+					{ 
+						$custom_field_title_2 = 'Kamalame Cay Resort'; 
+					} else 
+						{ $custom_field_title_2 = get_theme_mod('custom_field_title_2'); 
+					} 
+					echo $custom_field_title_2; 
+			?>
 			</div>
 			<div class="d-flex flex-column text-center caption-gallery-details">
-			Kamalame Cay, The Bahamas  
+			<?php 
+				if ( '' == get_theme_mod( 'custom_field_details_2' ) ) 
+					{ 
+						$custom_field_details_2 = 'Kamalame Cay, The Bahamas'; 
+					} else 
+						{ $custom_field_details_2 = get_theme_mod('custom_field_details_2'); 
+					} 
+					echo $custom_field_details_2; 
+			?>
 			</div>
 			<div class="text-center flex-fill bd-highlight">
 						<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp Read More &nbsp</button>
@@ -98,13 +123,29 @@
 		?>" alt="">	
 		<div class="caption">
 			<div class="d-flex flex-column text-center caption-gallery-details-bold">
-			Kamalame Cay Resort 
+			<?php 
+				if ( '' == get_theme_mod( 'custom_field_title_3' ) ) 
+					{ 
+						$custom_field_title_3 = 'Kamalame Cay Resort'; 
+					} else 
+						{ $custom_field_title_3 = get_theme_mod('custom_field_title_3'); 
+					} 
+					echo $custom_field_title_3; 
+			?>
 			</div>
 			<div class="d-flex flex-column text-center caption-gallery-details">
-			Kamalame Cay, The Bahamas  
+			<?php 
+				if ( '' == get_theme_mod( 'custom_field_details_3' ) ) 
+					{ 
+						$custom_field_details_3 = 'Kamalame Cay, The Bahamas'; 
+					} else 
+						{ $custom_field_details_3 = get_theme_mod('custom_field_details_3'); 
+					} 
+					echo $custom_field_details_3; 
+			?>  
 			</div>
 			<div class="text-center flex-fill bd-highlight">
-						<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp Read More &nbsp</button>
+					<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp Read More &nbsp</button>
 			</div>
 		</div>				
 	</div>
@@ -119,10 +160,26 @@
 		?>" alt="">	
 		<div class="caption">
 			<div class="d-flex flex-column text-center caption-gallery-details-bold">
-			Kamalame Cay Resort 
+			<?php 
+				if ( '' == get_theme_mod( 'custom_field_title_4' ) ) 
+					{ 
+						$custom_field_title_4 = 'Kamalame Cay Resort'; 
+					} else 
+						{ $custom_field_title_4 = get_theme_mod('custom_field_title_4'); 
+					} 
+					echo $custom_field_title_4; 
+			?>
 			</div>
 			<div class="d-flex flex-column text-center caption-gallery-details">
-			Kamalame Cay, The Bahamas  
+			<?php 
+				if ( '' == get_theme_mod( 'custom_field_details_4' ) ) 
+					{ 
+						$custom_field_details_4 = 'Kamalame Cay, The Bahamas'; 
+					} else 
+						{ $custom_field_details_4 = get_theme_mod('custom_field_details_4'); 
+					} 
+					echo $custom_field_details_4; 
+			?>   
 			</div>
 			<div class="text-center flex-fill bd-highlight">
 						<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp Read More &nbsp</button>
@@ -251,8 +308,42 @@
 			</div>
 		</div>
 		<div class="p-2 flex-fill bd-highlight text-center pt-5">
-						<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp&nbspGet In Touch &nbsp&nbsp</button>
+			<button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0" data-bs-toggle="modal" data-bs-target="#exampleModalLive"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp&nbspGet In Touch &nbsp&nbsp</button>
 		</div>
 	</div>
 </div>
+
+<!-- Modal Get In Touch -->
+        <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog mt-5 p-5">
+            <div class="modal-content rounded-0 border-0">
+              <div class="modal-header custom-modal-header">
+                <h5 class="modal-title caption-title-modal" id="exampleModalLiveLabel">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group input-group-sm mb-3 ps-3 pe-3">
+                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control " placeholder="Username" aria-label="Name" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group input-group-sm mb-3 ps-3 pe-3">
+                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                    <input type="text" class="form-control " placeholder="Username" aria-label="Phone" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group input-group-sm mb-3 ps-3 pe-3">
+                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-link"></i></span>
+                    <input type="text" class="form-control " placeholder="Username" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group input-group-sm mb-3 ps-3 pe-3">
+                    <span class="input-group-text caption-gallery-details-bold" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                    <input type="textarea" class="form-control " placeholder="Username" aria-label="Message" aria-describedby="basic-addon1">
+                </div>
+              </div>
+	            <div class="p-2 flex-fill bd-highlight text-center pt-5">
+			        <button type="button" class="btn btn-primary btn-sm rounded-pill btn-custom border-0"> &nbsp<i class="fa fa-paper-plane"></i> &nbsp&nbsp Send Message &nbsp&nbsp</button>
+		        </div>
+            </div>
+          </div>
+        </div>
+
 <?php get_footer(); ?>

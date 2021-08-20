@@ -51,11 +51,10 @@
 			</p>
 		</div>
 	</nav></div>
-
 </footer>
-
 </body>
-<!-- slider -->
+<!--  -->
+<!-- slider script -->
 <script>
 const imgs = document.querySelectorAll(".container img");
 const dots = document.querySelectorAll(".dot i");
@@ -96,5 +95,6 @@ const startAutoSlide = () => {
 
 startAutoSlide(); // Start the slideshow
 </script>
+
 <!-- slider end -->
 </html>

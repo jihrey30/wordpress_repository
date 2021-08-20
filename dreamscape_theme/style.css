@@ -163,6 +163,12 @@ html{
   color : white;  
   font-family: 'Poppins', sans-serif; 
 }
+.caption-title-modal{
+  font-size: 20px;
+  font-weight: 600;
+  color : white;  
+  font-family: 'Poppins', sans-serif; 
+}
 .caption-details{
   font-size: 12px;
   color : white;  
@@ -234,4 +240,8 @@ p {
 }
 .service{
   z-index: 5;
+}
+
+.modal-header.custom-modal-header{
+  background-color: #212121;
 }
