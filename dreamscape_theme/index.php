@@ -10,7 +10,7 @@
 <!-- slider-->
 <div class="container m-0 p-0">
 		<div class="arrow arrow-left">
-			</i>
+			</i>   
 		</div>
 		<div class="d-flex flex-column bd-highlight mt-5 ms-5">
 			<div class="row justify-content-start  m-0 p-0">
